@@ -14,6 +14,8 @@ The project structure is as follows:
 ├── plugins
 │ ├── models.py
 │ └── ping.py
+│ ├── start.py
+│ └── forward.py
 ├── README.md
 ├── requirements.txt
 └── .env.example

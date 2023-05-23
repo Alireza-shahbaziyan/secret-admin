@@ -1,4 +1,4 @@
-from peewee import SqliteDatabase, Model, BigIntegerField, DateTimeField
+from peewee import *
 
 # Create a database instance
 db = SqliteDatabase('db.sqlite3')
@@ -6,7 +6,7 @@ db = SqliteDatabase('db.sqlite3')
 # Sample model
 class User(Model):
     user_id = BigIntegerField()
-    name = CharField(dafult="Your User")
+    messages = TextField()
 
     class Meta:
         database = db
